@@ -8,7 +8,7 @@ xcode-select --install
 brew tap caskroom/cask
 
 # Install homebrew packages
-brew install bash composer curl drush exiftool git go gpg-agent mysql node numpy openssl php70 phpunit postgresql python sqlite symfony-installer wget zsh zsh-completions
+brew install bash composer curl gcc drush exiftool git go gpg-agent mysql node numpy openssl php70 phpunit postgresql python sqlite symfony-installer wget zsh zsh-completions
 
 # Install cask packages
 brew cask install cyberduck google-chrome postman hipchat visual-studio-code iterm2 sequel-pro pgadmin4 vlc colloquy caffeine tunnelblick docker evernote firefox google-earth utorrent webtorrent deluge webtorrent the-unarchiver steam libreoffice hex-fiend
