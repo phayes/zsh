@@ -37,5 +37,5 @@ go get github.com/nsf/gocode
 go get rogpeppe/godef
 
 # Install vscode extensions
-osascript -e 'display dialog "Hello WorldPlease run the `install code command in PATH` command in Visual Studio Code"'
+osascript -e 'display dialog "Please run the `install code command in PATH` command in Visual Studio Code"'
 code --install-extension 1dot75cm.RPMSpec DotJoshJohnson.xml fabianlauer.vs-code-xml-format felixfbecker.php-debug lukasz-wronski.ftp-sync lukehoban.Go marcostazi.VS-code-drupal mohsen1.prettify-json whatwedo.twig yigituslu.iRule
