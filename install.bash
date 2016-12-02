@@ -13,6 +13,9 @@ brew install bash composer curl drush exiftool git go gpg-agent mysql node numpy
 # Install cask packages
 brew cask install cyberduck google-chrome postman hipchat visual-studio-code iterm2 sequel-pro pgadmin4
 
+# Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 # Install go packages
 go get github.com/golang/glog
 go get github.com/golang/lint
