@@ -15,6 +15,8 @@ brew cask install cyberduck google-chrome postman hipchat visual-studio-code ite
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+git clone git@github.com:powerline/fonts.git /opt/powerline-fonts && bash /opt/powerline-fonts/install.sh
+cp .zshrc ~
 
 # Install go packages
 go get github.com/golang/glog
