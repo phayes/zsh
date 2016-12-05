@@ -33,11 +33,11 @@ go get github.com/newhook/go-symbols
 go get golang.org/x/tools/cmd/gorename
 go get github.com/golang/lint
 go get github.com/sqs/goreturns
-go get github.com/derekparker/delve
 go get github.com/tpng/gopkgs
 go get github.com/cweill/gotests
 go get github.com/nsf/gocode
-go get rogpeppe/godef
+go get github.com/rogpeppe/godef
+brew install go-delve/delve/delve
 
 # Install vscode extensions
 osascript -e 'display dialog "Please run the `install code command in PATH` command in Visual Studio Code"'
