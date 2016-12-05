@@ -4,7 +4,7 @@
     "go.formatTool": "goimports",
     "editor.fontSize": 12,
     "window.openFilesInNewWindow": false,
-    "editor.tabSize": 3,
+    "editor.tabSize": 2,
     "files.hotExit": true,
     "window.zoomLevel": 1
 }
