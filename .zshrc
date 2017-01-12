@@ -7,6 +7,8 @@ bindkey '^[[1;5D' backward-word    # System Preferences > Keyboard > Keyboard Sh
                                    # and change the settings for "Move left a space" and "Move right a space"
 # Aliases
 alias sub="subl"                   # Quickly open in Sublime Text
+alias vi="open -a 'Visual Studio Code'" # Open in Visual Studio Code
+alias flushdns="sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder;" # Flush DNS cache
 
 alias pull="git pull"
 alias push="git push -u"
@@ -18,8 +20,11 @@ alias status="git status"
 alias commit="git commit"
 alias add="git add"
 
+alias sym="php bin/console"
+
 # Automatic set-up
-eval $(gpg-agent --daemon)
+eval $(gpg-agent --daemon) &> /dev/null
+ssh-add &> /dev/null
 
 # Misc paths
 export GOPATH=/opt/gopath
@@ -75,11 +80,11 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git github brew osx sublime)
+plugins=(git github brew osx sublime docker)
 
 # User configuration
 
-export PATH="/opt/local/bin:/opt/local/sbin:/opt/gopath/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/usr/local/lib/ruby/gems/2.1.0/bin:/usr/local/opt/coreutils/libexec/gnubin"
+export PATH="/opt/local/bin:/opt/local/sbin:/opt/gopath/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/usr/local/lib/ruby/gems/2.1.0/bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/share/npm/bin:/usr/local/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
