@@ -8,7 +8,7 @@ xcode-select --install
 brew tap caskroom/cask
 
 # Install homebrew packages
-brew install bash composer curl gcc drush exiftool git go gpg-agent mysql node numpy openssl php70 phpunit
+brew install bash composer curl gcc exiftool git go gpg-agent mysql node numpy openssl php70
 brew install postgresql python sqlite symfony-installer wget zsh zsh-completions
 
 # Install cask packages
@@ -39,6 +39,13 @@ go get github.com/nsf/gocode
 go get github.com/rogpeppe/godef
 brew install go-delve/delve/delve
 
+# Install composer stuff
+composer global require --no-interaction --update-no-dev phpunit/phpunit:4.8.35 drush/drush drupal/coder squizlabs/php_codesniffer
+phpcs --config-set installed_paths ~/.composer/vendor/drupal/coder/coder_sniffer
+
 # Install vscode extensions
 osascript -e 'display dialog "Please run the `install code command in PATH` command in Visual Studio Code"'
-code --install-extension 1dot75cm.RPMSpec DotJoshJohnson.xml fabianlauer.vs-code-xml-format felixfbecker.php-debug lukasz-wronski.ftp-sync lukehoban.Go marcostazi.VS-code-drupal mohsen1.prettify-json whatwedo.twig yigituslu.iRule
+code --install-extension 1dot75cm.RPMSpec DotJoshJohnson.xml fabianlauer.vs-code-xml-format felixfbecker.php-debug lukasz-wronski.ftp-sync lukehoban.Go marcostazi.VS-code-drupal mohsen1.prettify-json whatwedo.twig yigituslu.iRule ikappas.phpcs
+
+# Install phpcs code location
+phpcs --config-set installed_paths ~/.composer/vendor/drupal/coder/coder_sniff

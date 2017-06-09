@@ -1,10 +1,13 @@
 # Custom stuff
 setopt NO_BEEP                     # stop the insanity
 
-bindkey -e  					   # control -> or <- for jumping words
+bindkey -e  					             # control -> or <- for jumping words
 bindkey '^[[1;5C' forward-word     # Make sure to disable space-jumping on Mac:
 bindkey '^[[1;5D' backward-word    # System Preferences > Keyboard > Keyboard Shortcuts > Mission Control 
                                    # and change the settings for "Move left a space" and "Move right a space"
+# Disable autocorrect
+unsetopt correct_all
+
 # Aliases
 alias sub="subl"                   # Quickly open in Sublime Text
 alias vi="open -a 'Visual Studio Code'" # Open in Visual Studio Code
@@ -84,7 +87,10 @@ plugins=(git github brew osx sublime docker)
 
 # User configuration
 
-export PATH="/opt/local/bin:/opt/local/sbin:/opt/gopath/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/usr/local/lib/ruby/gems/2.1.0/bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/share/npm/bin:/usr/local/bin"
+export PATH="/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/usr/local/lib/ruby/gems/2.1.0/bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/share/npm/bin:/usr/local/bin"
+export PATH="/opt/gopath/bin:$PATH"
+export PATH="~/.composer/vendor/bin:$PATH"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
