@@ -1,4 +1,4 @@
-// Setting for Visual Studio Code
+// Place your settings in this file to overwrite the default settings
 {
     "go.formatOnSave": true,
     "go.formatTool": "goimports",
@@ -6,8 +6,16 @@
     "window.openFilesInNewWindow": false,
     "editor.tabSize": 2,
     "files.hotExit": true,
-    "window.zoomLevel": 2, 
+    "window.zoomLevel": 2,
     "editor.wordWrap": false,
     "git.confirmSync": false, 
-    "phpcs.standard": "Drupal"
-}
+    "phpcs.standard": "Drupal", 
+    "xdebug.max_nesting_level": 1024, 
+    "search.exclude": {
+        "**/.git": true,
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/tmp": true,
+        "**/vendor": true
+    }
+  }
