@@ -1,5 +1,6 @@
 # Install xcode
 xcode-select --install
+sudo xcodebuild -license
 
 # Install homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -7,14 +8,19 @@ xcode-select --install
 # install cask
 brew tap caskroom/cask
 
+# Tap homebrew repos
+brew tap homebrew/dupes
+brew tap homebrew/versions
+brew tap homebrew/homebrew-ph
+
 # Install homebrew packages
 brew install bash composer curl gcc exiftool git go gpg-agent mysql node numpy openssl php70
-brew install postgresql python sqlite symfony-installer wget zsh zsh-completions
+brew install postgresql python sqlite symfony-installer wget zsh zsh-completions php-code-sniffer
 
 # Install cask packages
 brew cask install cyberduck google-chrome postman hipchat visual-studio-code iterm2 sequel-pro
 brew cask install pgadmin4 vlc colloquy caffeine tunnelblick docker evernote firefox google-earth
-brew cask install utorrent webtorrent deluge webtorrent the-unarchiver steam libreoffice hex-fiend spotify
+brew cask install webtorrent deluge webtorrent the-unarchiver steam libreoffice hex-fiend spotify
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -46,7 +52,16 @@ phpcs --config-set installed_paths ~/.composer/vendor/drupal/coder/coder_sniffer
 
 # Install vscode extensions
 osascript -e 'display dialog "Please run the `install code command in PATH` command in Visual Studio Code"'
-code --install-extension 1dot75cm.RPMSpec DotJoshJohnson.xml fabianlauer.vs-code-xml-format felixfbecker.php-debug lukasz-wronski.ftp-sync lukehoban.Go marcostazi.VS-code-drupal mohsen1.prettify-json whatwedo.twig yigituslu.iRule ikappas.phpcs
+code --install-extension 1dot75cm.RPMSpec
+code --install-extension DotJoshJohnson.xml
+code --install-extension fabianlauer.vs-code-xml-format
+code --install-extension felixfbecker.php-debug
+code --install-extension lukasz-wronski.ftp-sync
+code --install-extension lukehoban.Go
+code --install-extension mohsen1.prettify-json
+code --install-extension whatwedo.twig
+code --install-extension yigituslu.iRule
+code --install-extension ikappas.phpcs
 
 # Install phpcs code location
 phpcs --config-set installed_paths ~/.composer/vendor/drupal/coder/coder_sniff
