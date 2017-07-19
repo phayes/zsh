@@ -26,7 +26,7 @@ alias add="git add"
 alias sym="php bin/console"
 
 # Automatic set-up
-eval $(gpg-agent --daemon) &> /dev/null
+# eval $(gpg-agent --daemon) &> /dev/null # Mac now comes with ssh-agent, so no need to start a new one
 ssh-add &> /dev/null
 
 # Misc paths
@@ -61,7 +61,7 @@ ZSH_THEME="agnoster"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="false"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
