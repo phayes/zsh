@@ -22,6 +22,15 @@ brew cask install cyberduck google-chrome postman hipchat visual-studio-code ite
 brew cask install pgadmin4 vlc colloquy caffeine tunnelblick docker evernote firefox google-earth
 brew cask install webtorrent deluge webtorrent the-unarchiver steam libreoffice hex-fiend spotify skype silverlight
 
+# Install QGIS
+brew cask install java
+brew tap homebrew/science
+brew install gdal
+mkdir -p /Users/phayes/Library/Python/2.7/lib/python/site-packages
+echo 'import site; site.addsitedir("/usr/local/lib/python2.7/site-packages")' >> /Users/phayes/Library/Python/2.7/lib/python/site-packages/homebrew.pth
+sudo ln -s /System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python /Library/Python/2.7/site-packages/matplotlib-override
+brew cask install qgis
+
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 git clone git@github.com:powerline/fonts.git /opt/powerline-fonts && bash /opt/powerline-fonts/install.sh
