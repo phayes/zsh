@@ -22,6 +22,9 @@ brew cask install cyberduck google-chrome postman hipchat visual-studio-code ite
 brew cask install pgadmin4 vlc colloquy caffeine tunnelblick docker evernote firefox google-earth
 brew cask install webtorrent deluge webtorrent the-unarchiver steam libreoffice hex-fiend spotify skype silverlight
 
+# Install pip
+sudo easy_install pip
+
 # Install QGIS
 brew cask install java
 brew tap homebrew/science
