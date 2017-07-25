@@ -88,7 +88,7 @@ plugins=(git github brew osx sublime docker)
 # User configuration
 
 export PATH="/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/usr/local/lib/ruby/gems/2.1.0/bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/share/npm/bin:/usr/local/bin"
-export PATH="/opt/gopath/bin:$PATH"
+export PATH="~/go/bin:$PATH"
 export PATH="~/.composer/vendor/bin:$PATH"
 
 # export MANPATH="/usr/local/man:$MANPATH"
