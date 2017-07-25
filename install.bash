@@ -57,6 +57,7 @@ go get github.com/cweill/gotests
 go get github.com/nsf/gocode
 go get github.com/rogpeppe/godef
 go get github.com/ramya-rao-a/go-outline
+go get github.com/golang/lint/golint
 brew install go-delve/delve/delve
 
 # Install composer stuff
