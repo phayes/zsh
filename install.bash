@@ -63,6 +63,7 @@ brew install go-delve/delve/delve
 # Install composer stuff
 composer global require --no-interaction --update-no-dev phpunit/phpunit:4.8.35 drush/drush drupal/coder squizlabs/php_codesniffer:2.9.1
 phpcs --config-set installed_paths ~/.composer/vendor/drupal/coder/coder_sniffer
+phpcs --config-set default_standard Drupal
 
 # Install vscode extensions
 osascript -e 'display dialog "Please run the `install code command in PATH` command in Visual Studio Code"'
