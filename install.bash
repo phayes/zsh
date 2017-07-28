@@ -83,3 +83,4 @@ phpcs --config-set installed_paths ~/.composer/vendor/drupal/coder/coder_sniff
 
 # Set git defaults
 git config --global push.default current
+git config --global url.ssh://git@github.com/.insteadOf https://github.com/
