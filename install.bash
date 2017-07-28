@@ -77,6 +77,7 @@ code --install-extension mohsen1.prettify-json
 code --install-extension whatwedo.twig
 code --install-extension yigituslu.iRule
 code --install-extension ikappas.phpcs
+code --install-extension rafaelmaiolla.remote-vscode
 
 # Install phpcs code location
 phpcs --config-set installed_paths ~/.composer/vendor/drupal/coder/coder_sniff
