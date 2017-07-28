@@ -80,3 +80,6 @@ code --install-extension ikappas.phpcs
 
 # Install phpcs code location
 phpcs --config-set installed_paths ~/.composer/vendor/drupal/coder/coder_sniff
+
+# Set git defaults
+git config --global push.default current
