@@ -15,13 +15,13 @@ brew tap homebrew/homebrew-ph
 
 # Install homebrew packages
 brew install bash composer curl gcc exiftool git go gpg-agent mysql node numpy openssl php70 bzr
-brew install postgresql python sqlite symfony-installer wget zsh zsh-completions php-code-sniffer
+brew install postgresql python sqlite symfony-installer wget zsh zsh-completions rmate
 
 # Install cask packages
 brew cask install cyberduck google-chrome postman hipchat visual-studio-code iterm2 sequel-pro
 brew cask install pgadmin4 vlc colloquy caffeine tunnelblick docker evernote firefox google-earth
 brew cask install webtorrent deluge webtorrent the-unarchiver steam libreoffice hex-fiend spotify
-brew cask install skype silverlight oxygen-xml-editor
+brew cask install skype silverlight oxygen-xml-editor ngrok
 
 # Install pip
 sudo easy_install pip
