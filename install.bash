@@ -21,7 +21,7 @@ brew install postgresql python sqlite symfony-installer wget zsh zsh-completions
 brew cask install cyberduck google-chrome postman hipchat visual-studio-code iterm2 sequel-pro
 brew cask install pgadmin4 vlc colloquy caffeine tunnelblick docker evernote firefox google-earth
 brew cask install webtorrent deluge webtorrent the-unarchiver steam libreoffice hex-fiend spotify
-brew cask install skype silverlight oxygen-xml-editor ngrok
+brew cask install skype silverlight oxygen-xml-editor ngrok adobe-acrobat-reader
 
 # Install pip
 sudo easy_install pip
