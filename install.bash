@@ -32,3 +32,7 @@ brew tap homebrew/science
 brew install gdal
 mkdir -p /Users/phayes/Library/Python/2.7/lib/python/site-packages
 echo 'import site; site.addsitedir("/usr/local/lib/python2.7/site-packages
+
+# git config
+git config --global push.default current
+git config --global url.ssh://git@github.com/.insteadOf https://github.com/
