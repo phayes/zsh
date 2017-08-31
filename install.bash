@@ -14,7 +14,7 @@ brew tap homebrew/versions
 brew tap homebrew/homebrew-php
 
 # Install homebrew packages
-brew install bash composer curl gcc exiftool git go gpg-agent mysql node numpy openssl php70 bzr
+brew install bash composer curl gcc exiftool git go gpg-agent mysql node numpy openssl php70 php70-gmp bzr
 brew install postgresql python sqlite symfony-installer wget zsh zsh-completions rmate
 
 # Install cask packages
