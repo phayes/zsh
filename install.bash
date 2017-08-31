@@ -11,7 +11,7 @@ brew tap caskroom/cask
 # Tap homebrew repos
 brew tap homebrew/dupes
 brew tap homebrew/versions
-brew tap homebrew/homebrew-ph
+brew tap homebrew/homebrew-php
 
 # Install homebrew packages
 brew install bash composer curl gcc exiftool git go gpg-agent mysql node numpy openssl php70 bzr
