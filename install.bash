@@ -60,7 +60,8 @@ go get github.com/davecgh/go-spew/spew
 brew install go-delve/delve/delve
 
 # Install composer stuff
-composer global require --no-interaction --update-no-dev phpunit/phpunit:4.8.35 drush/drush drupal/coder squizlabs/php_codesniffer:">=2.8.1 <3.0"
+composer global config repositories.composer-merge-plugin vcs https://github.com/highwire/composer-merge-plugin
+composer global require --no-interaction --update-no-dev phpunit/phpunit:4.8.35 drush/drush drupal/coder squizlabs/php_codesniffer:">=2.8.1 <3.0" wikimedia/composer-merge-plugin:dev-master
 phpcs --config-set installed_paths ~/.composer/vendor/drupal/coder/coder_sniffer
 phpcs --config-set default_standard Drupal
 
