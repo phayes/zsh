@@ -14,14 +14,17 @@ brew tap homebrew/versions
 brew tap homebrew/homebrew-php
 
 # Install homebrew packages
-brew install bash composer curl gcc exiftool git go gpg-agent mysql node numpy openssl php70 php70-gmp bzr
-brew install postgresql python sqlite symfony-installer wget zsh zsh-completions rmate
-
+brew install bash composer curl gcc exiftool git go gpg-agent mysql node numpy openssl php71 php71-gmp bzr
+brew install postgresql python sqlite symfony-installer wget zsh zsh-completions rmate rpm gnu-tar
+ 
 # Install cask packages
 brew cask install cyberduck google-chrome postman hipchat visual-studio-code iterm2 sequel-pro
 brew cask install pgadmin4 vlc colloquy caffeine tunnelblick docker evernote firefox google-earth
 brew cask install webtorrent deluge webtorrent the-unarchiver steam libreoffice hex-fiend spotify
 brew cask install skype silverlight oxygen-xml-editor ngrok adobe-acrobat-reader google-photos-backup-and-sync
+
+# Install fpm
+sudo gem install --no-ri --no-rdoc fpm
 
 # Install pip
 sudo easy_install pip
@@ -85,3 +88,7 @@ phpcs --config-set installed_paths ~/.composer/vendor/drupal/coder/coder_sniff
 # Set git defaults
 git config --global push.default current
 git config --global url.ssh://git@github.com/.insteadOf https://github.com/
+
+# Set up /opt
+sudo chown phayes /opt
+sudo chmod o-w /opt
