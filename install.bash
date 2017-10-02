@@ -15,7 +15,7 @@ brew tap homebrew/homebrew-php
 
 # Install homebrew packages
 brew install bash composer curl gcc exiftool git go gpg-agent mysql node numpy openssl php71 php71-gmp bzr
-brew install postgresql python sqlite symfony-installer wget zsh zsh-completions rmate rpm gnu-tar
+brew install postgresql python sqlite symfony-installer wget zsh zsh-completions rmate rpm snapcraft gnu-tar
  
 # Install cask packages
 brew cask install cyberduck google-chrome postman hipchat visual-studio-code iterm2 sequel-pro
