@@ -29,13 +29,6 @@ sudo gem install --no-ri --no-rdoc fpm
 # Install pip
 sudo easy_install pip
 
-# Install QGIS
-brew cask install java
-brew tap homebrew/science
-brew install gdal
-mkdir -p /Users/phayes/Library/Python/2.7/lib/python/site-packages
-echo 'import site; site.addsitedir("/usr/local/lib/python2.7/site-packages
-
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 git clone git@github.com:powerline/fonts.git /opt/powerline-fonts && bash /opt/powerline-fonts/install.sh
