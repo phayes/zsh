@@ -16,12 +16,13 @@ brew tap homebrew/homebrew-php
 # Install homebrew packages
 brew install bash composer curl gcc exiftool git go gpg-agent mysql node numpy openssl php71 php71-gmp bzr
 brew install postgresql python sqlite symfony-installer wget zsh zsh-completions rmate rpm snapcraft gnu-tar
- 
+
 # Install cask packages
 brew cask install cyberduck google-chrome postman hipchat visual-studio-code iterm2 sequel-pro
 brew cask install pgadmin4 vlc colloquy caffeine tunnelblick docker evernote firefox google-earth
 brew cask install webtorrent deluge webtorrent the-unarchiver steam libreoffice hex-fiend spotify
 brew cask install skype silverlight oxygen-xml-editor ngrok adobe-acrobat-reader google-photos-backup-and-sync
+brew cask install gpg-suite
 
 # Install fpm
 sudo gem install --no-ri --no-rdoc fpm
@@ -54,6 +55,12 @@ go get github.com/ramya-rao-a/go-outline
 go get github.com/golang/lint/golint
 go get github.com/davecgh/go-spew/spew
 brew install go-delve/delve/delve
+
+# Rust
+curl https://sh.rustup.rs -sSf | sh
+cargo toolchain add nightly
+cargo install lsd
+cargo install amber
 
 # Install composer stuff
 composer global config repositories.composer-merge-plugin vcs https://github.com/highwire/composer-merge-plugin
