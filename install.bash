@@ -92,3 +92,9 @@ git config --global url.ssh://git@github.com/.insteadOf https://github.com/
 # Set up /opt
 sudo chown phayes /opt
 sudo chmod o-w /opt
+
+# Configure git
+git config --global gpg.program gpg
+git config --global commit.gpgsign true
+git config --global user.signingkey CD37120BE92090E32A39F859728E71482E8E0832
+git config --global push.default current
