@@ -22,15 +22,13 @@ alias diff="git diff"
 alias status="git status"
 alias commit="git commit"
 alias add="git add"
+alias dc="docker-compose"
 
 alias sym="php bin/console"
 
 # Automatic set-up
-# eval $(gpg-agent --daemon) &> /dev/null # Mac now comes with ssh-agent, so no need to start a new one
+# eval $(gpg-agent --daemon) &> /dev/null
 ssh-add &> /dev/null
-
-# Misc paths
-export GOPATH=/opt/gopath
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/phayes/.oh-my-zsh
@@ -90,6 +88,13 @@ plugins=(git github brew osx sublime docker)
 export PATH="/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/usr/local/lib/ruby/gems/2.1.0/bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/share/npm/bin:/usr/local/bin"
 export PATH="$PATH:$HOME/go/bin"
 export PATH="$PATH:$HOME/.composer/vendor/bin"
+export PATH="$PATH:/usr/local/texlive/2017/bin/x86_64-darwin"
+export PATH="$PATH:$HOME/.cargo/bin"
+export PATH="/usr/local/MacGPG2/bin:$PATH"
+
+
+# Github token
+export GITHUB_TOKEN=$(cat .githubtoken)
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -119,3 +124,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+export PATH="/usr/local/opt/php@7.1/bin:$PATH"
+export PATH="/usr/local/opt/php@7.1/sbin:$PATH"
+
+
+alias ls="lsd"
+alias ll="lsd -l"
+alias la="lsd -la"
