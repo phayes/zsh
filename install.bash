@@ -32,7 +32,7 @@ sudo easy_install pip
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-git clone git@github.com:powerline/fonts.git /opt/powerline-fonts && bash /opt/powerline-fonts/install.sh
+brew install --cask font-meslo-lg-nerd-font
 cp .zshrc ~
 
 # Install go packages
