@@ -16,6 +16,7 @@ brew tap homebrew/homebrew-php
 # Install homebrew packages
 brew install bash composer curl gcc exiftool git go gpg-agent mysql node numpy openssl php71 php71-gmp bzr
 brew install postgresql python sqlite symfony-installer wget zsh zsh-completions rmate rpm snapcraft gnu-tar
+brew install pinentry-mac
 
 # Install cask packages
 brew cask install cyberduck google-chrome postman hipchat visual-studio-code iterm2 sequel-pro
@@ -34,27 +35,6 @@ sudo easy_install pip
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 brew install --cask font-meslo-lg-nerd-font
 cp .zshrc ~
-
-# Install go packages
-go get github.com/golang/glog
-go get github.com/golang/lint
-go get golang.org/x/review/git-codereview
-go get github.com/rogpeppe/godef
-go get golang.org/x/tools/cmd/godoc
-go get golang.org/x/tools/cmd/guru
-go get github.com/lukehoban/go-outline
-go get github.com/newhook/go-symbols
-go get golang.org/x/tools/cmd/gorename
-go get github.com/golang/lint
-go get github.com/sqs/goreturns
-go get github.com/tpng/gopkgs
-go get github.com/cweill/gotests
-go get github.com/nsf/gocode
-go get github.com/rogpeppe/godef
-go get github.com/ramya-rao-a/go-outline
-go get github.com/golang/lint/golint
-go get github.com/davecgh/go-spew/spew
-brew install go-delve/delve/delve
 
 # Rust
 curl https://sh.rustup.rs -sSf | sh
